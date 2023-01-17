@@ -100,6 +100,23 @@ The finite element meshes can be generated using the :code:`gen_mesh.py` script.
 Results
 -------
 
+To plot the deformed foam-reinforced structure run the following command:
+
+.. code::
+
+   sfepy-view results/beam_shell_foam.vtk -f uf:wuf:f10:m2:p0 0:vw:m2:p0 us_disp:wus_disp:f10:m1:p1 --camera-position="-0.4,0.16,0.57,0.02,0,0.23,0.22,0.97,-0.11" --grid-vector1="0, 1.6, 0"
+
+The resulting image is depicted in :numref:`fig-displ`.
+
+.. _fig-displ:
+
+.. figure:: _static/beam_shell_foam_displacement.png
+   :width: 600px
+   :align: center
+   :figclass: align-center
+
+   Resulting displacements.
+
 The displacements in the y-direction along line :math:`l_t` (see
 :numref:`fig-bc`) obtained by the different models are compared in
 :numref:`fig-results`. The figure is plotted by :code:`plot.py`
