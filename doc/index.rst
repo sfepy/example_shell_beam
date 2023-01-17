@@ -12,10 +12,9 @@ We consider a thin-walled beam made of steel fully fixed at its one end and
 loaded by a uniform load at the top edge of the second end. The beam is
 reinforced by a foam material placed inside it. The outer dimensions of the
 beam are 30x40 mm, the wall thickness is 2 mm, and its length is 400 mm. The
-thin-walled beam is modelled using
-`Shell10XTerm <https://sfepy.org/doc-devel/src/sfepy/terms/terms_shells.html#sfepy.terms.terms_shells.Shell10XTerm>`_
-elements and the foam part by the classical linear solid elements. The material properties
-of the constituents are summarize in the following table:
+thin-walled beam is modeled using `shell10x`_ elements and the foam part by
+the classical linear solid elements. The material properties of the
+constituents are summarized in the following table:
 
 .. _tab-mat-prop:
 
@@ -40,9 +39,9 @@ The applied boundary conditions are depicted in :numref:`fig-bc`.
 In order to show the credibility of the above model (see :numref:`fig-model0`),
 we compare its results with the results of the following models:
 
-  * beam without reinforcement using Shell10XTerm elements, see :numref:`fig-model1`
+  * beam without reinforcement using `shell10x`_ elements, see :numref:`fig-model1`
   * beam without reinforcement using solid hexahedral elements, see :numref:`fig-model2`
-  * beam with reinforcement using solid hexahedral elements for both constituents, see :numref:`fig-model3`
+  * beam with reinforcement using solid hexahedral elements for both the constituents, see :numref:`fig-model3`
 
 .. _fig-model0:
 
@@ -51,7 +50,7 @@ we compare its results with the results of the following models:
    :align: center
    :figclass: align-center
 
-   Beam with foam reinforcement - Shell10XTerm + hexahedral elements.
+   Beam with foam reinforcement - `shell10x`_ + hexahedral elements.
 
 .. _fig-model1:
 
@@ -60,7 +59,7 @@ we compare its results with the results of the following models:
    :align: center
    :figclass: align-center
 
-   Beam without reinforcement - Shell10XTerm elements.
+   Beam without reinforcement - `shell10x`_ elements.
 
 .. _fig-model2:
 
@@ -129,3 +128,6 @@ The displacements in the y-direction along line :math:`l_t` (see
    :figclass: align-center
 
    Displacements along line :math:`l_1`.
+
+
+.. _shell10x: https://sfepy.org/doc-devel/src/sfepy/terms/terms_shells.html#sfepy.terms.terms_shells.Shell10XTerm
