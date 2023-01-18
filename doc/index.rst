@@ -127,7 +127,7 @@ The displacements in the y-direction along line :math:`l_t` (see
    :align: center
    :figclass: align-center
 
-   Displacements along line :math:`l_1`.
+   Displacements along line :math:`l_t`.
 
 
 .. _shell10x: https://sfepy.org/doc-devel/src/sfepy/terms/terms_shells.html#sfepy.terms.terms_shells.Shell10XTerm
